@@ -1,0 +1,14 @@
+<launch>
+  <arg name="model" default="$(find wb_viz)/urdf/whirlybird.urdf"/>
+  <arg name="gui" default="false"/>
+
+  <param name="robot_description" textfile="$(arg model)"/>
+  <param name="use_gui" value="$(arg gui)"/>
+
+  <node name="joint_state_publisher" pkg="wb_viz" type="joint_state_publisher.py" output="screen"/>
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find wb_viz)/rviz/whirlybird.rviz" required="true" output="screen"/>
+
+
+
+</launch>

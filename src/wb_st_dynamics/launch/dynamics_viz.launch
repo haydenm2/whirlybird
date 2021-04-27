@@ -1,0 +1,7 @@
+<launch>
+  <include file="$(find wb_viz)/launch/visualize.launch"/>
+
+  <rosparam command="load" file="$(find wb_st_control)/param/whirlybird.yaml" ns="whirlybird" />
+  <node pkg="wb_st_dynamics" type="wb_dynamics.py" name="dynamics"/>
+
+</launch>

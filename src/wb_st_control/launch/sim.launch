@@ -1,0 +1,8 @@
+<launch>
+
+  <include file="$(find wb_st_dynamics)/launch/dynamics_viz.launch"/>
+
+  <node name="wb_st_control" pkg="wb_st_control" type="controllerh.py" output="screen"/>
+  <!-- <node name="wb_st_control" pkg="wb_st_control" type="pre_compiled_controller" /> -->
+
+</launch>

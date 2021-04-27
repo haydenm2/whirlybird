@@ -1,0 +1,7 @@
+<launch>
+  <include file="$(find wb_viz)/launch/visualize.launch"/>
+
+  <node name="wb_st_control" pkg="wb_st_control" type="controller.py" />
+  <!-- <node name="wb_st_control" pkg="wb_st_control" type="pre_compiled_controller" /> -->
+
+</launch>

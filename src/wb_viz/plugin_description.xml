@@ -1,0 +1,10 @@
+<library path="lib/libwb_viz">
+  <class name="wb_viz/Whirlybird"
+         type="wb_viz::WhirlybirdPanel"
+         base_class_type="rviz::Panel">
+    <description>
+      A panel widget for interacting with the Whirlybird
+    </description>
+  </class>
+
+</library>

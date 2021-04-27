@@ -1,0 +1,29 @@
+g: 9.81                 # gravity
+l1: 0.85                #
+l2: 0.3048              #
+m1: 0.891               #
+m2: 1.0                 #
+d: 0.178                #
+h: 0.65                 #
+r: 0.12                 #
+Jx: 0.0047              # moment of inertia: x
+Jy: 0.0014              # : y
+Jz: 0.0041              # : z
+km: 10.44 #10.44               # found in lab4. TODO: CHANGE FOR NEW HARDWARE #5.3
+sigma_gyro: 8.7266e-5   #
+sigma_pixel: 0.05       #
+theta_max: 0.785398     # RAD
+theta_min: -0.785398    # RAD
+psi_max: 1.5708         # RAD
+psi_min: -1.5708        # RAD
+phi_max: 1.309          # RAD
+phi_min: -1.309         # RAD
+
+# Disturbances
+disturbances: false        # If true, a constant disturbance will be added to dynamics to test the integrator in PID control. 
+disturbance_percent: 0.1   # Indicates how large the maximum disturbances are with 1 being 100 percent and 0 being 0 percent of the ideal value.
+
+# Callback Rate         The rate in hz for each update
+esc_command_rate: 50    # How fast you can send commands to the esc. Simulation only
+dynamics_rate: 150      # How fast the dynamics are updated. Simulation only
+controller_rate: 100    # How fast the controller is called. Simulation and hardware.

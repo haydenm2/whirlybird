@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>wb_st_control</name>
+  <version>0.0.0</version>
+  <description>The whirlybird_controller package</description>
+
+  <maintainer email="daniel.koch@byu.edu">Daniel Koch</maintainer>
+
+
+  <license>TODO</license>
+
+
+  <author email="daniel.koch@byu.edu">Daniel Koch</author>
+
+
+  <buildtool_depend condition="$ROS_VERSION == 1">catkin</buildtool_depend>
+  <buildtool_depend condition="$ROS_VERSION == 2">ament_cmake</buildtool_depend>
+
+
+  <depend condition="$ROS_VERSION == 1">roscpp</depend>
+  <depend condition="$ROS_VERSION == 1">rospy</depend>
+  <depend condition="$ROS_VERSION == 1">wb_msgs</depend>
+
+  <exec_depend condition="$ROS_VERSION == 1">python3-numpy</exec_depend>
+  <build_export_depend condition="$ROS_VERSION == 1">python3-numpy</build_export_depend>
+
+  <exec_depend condition="$ROS_VERSION == 1">python3-yaml</exec_depend>
+  <build_export_depend condition="$ROS_VERSION == 1">python3-yaml</build_export_depend>
+
+
+  <export>
+
+    <build_type condition="$ROS_VERSION == 1">catkin</build_type>
+    <build_type condition="$ROS_VERSION == 2">ament_cmake</build_type>
+
+  </export>
+</package>
